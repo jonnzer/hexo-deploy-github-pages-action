@@ -50,6 +50,7 @@ npm cache verify
 
 echo ">>> change npm config ..."
 npm config set registry https://registry.npmjs.org/
+npm install -g npm@7.24.2
 
 echo ">>> Install NPM dependencies ..."
 
