@@ -48,9 +48,11 @@ rm -rf "${del_package}"
 npm cache clear --force
 npm cache verify
 
-echo ">>> change npm config ..."
-npm config set registry https://registry.npmjs.org/
-npm install -g npm@latest
+echo ">>> change npm config && package.json..."
+
+rm -rf node_modules
+rm package-lock.json
+npm cache clear --force
 
 echo ">>> Install NPM dependencies ..."
 
