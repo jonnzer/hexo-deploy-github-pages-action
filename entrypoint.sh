@@ -49,6 +49,8 @@ rm -rf node_modules
 npm cache clear --force
 
 echo ">>> Install NPM dependencies ..."
+node -v
+npm -v
 
 npm install
 
