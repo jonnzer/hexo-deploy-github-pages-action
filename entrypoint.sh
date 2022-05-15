@@ -45,6 +45,8 @@ del_package="./node_modules"
 
 echo ">>> npm cache clear ..."
 rm -rf "${del_package}"
+npm cache clear --force
+npm cache verify
 
 echo ">>> change npm config ..."
 npm config set registry https://registry.npmjs.org/
