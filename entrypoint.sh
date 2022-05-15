@@ -44,16 +44,12 @@ cd "${GITHUB_WORKSPACE}"
 del_package="./node_modules"
 
 echo ">>> npm cache clear ..."
-npm install npm@latest
-npm cache verify
 rm -rf node_modules
 npm cache clear --force
 
 echo ">>> Install NPM dependencies ..."
 node -v
 npm -v
-
-tree -C -f
 
 npm install
 
