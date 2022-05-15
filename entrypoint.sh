@@ -44,15 +44,15 @@ cd "${GITHUB_WORKSPACE}"
 del_package="./node_modules"
 
 echo ">>> npm cache clear ..."
-npm cache verify
+sudo npm cache verify
 rm -rf node_modules
-npm cache clear --force
+sudo npm cache clear --force
 
 echo ">>> Install NPM dependencies ..."
 node -v
 npm -v
 
-npm install
+sudo npm install
 
 echo ">>> Clean folder ..."
 npx hexo clean
