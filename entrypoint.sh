@@ -45,7 +45,7 @@ del_package="./node_modules"
 
 echo ">>> npm cache clear ..."
 rm -rf "${del_package}"
-npm cache clear --force
+npm cache clear
 
 echo ">>> Install NPM dependencies ..."
 npm install
