@@ -41,7 +41,10 @@ apt-get install -y git && \
 # Directs the action to the the Github workspace.
 cd "${GITHUB_WORKSPACE}"
 
-echo ">>> Install NPM dependencies ..."
+del_package="./node_modules"
+
+echo ">>> npm cache clear ..."
+rm -rf "${del_package}"
 npm cache clear --force
 
 echo ">>> Install NPM dependencies ..."
