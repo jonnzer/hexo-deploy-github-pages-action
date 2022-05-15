@@ -42,6 +42,9 @@ apt-get install -y git && \
 cd "${GITHUB_WORKSPACE}"
 
 echo ">>> Install NPM dependencies ..."
+npm cache clear --force
+
+echo ">>> Install NPM dependencies ..."
 npm install
 
 echo ">>> Clean folder ..."
